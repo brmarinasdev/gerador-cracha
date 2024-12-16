@@ -1,0 +1,57 @@
+.borda {
+  background-color: rgb(42, 42, 116);
+  border: 2px solid rgb(42, 42, 116);
+  border-radius: 10px;
+  padding: 3px;
+}
+
+.cracha {
+  display: grid;
+  place-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cracha-layout {
+  display: block;
+  max-width: 100%;
+  width: 300px;
+  height: auto;
+  z-index: 1;
+}
+
+.cracha-foto {
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 45%;
+  height: 40%;
+  object-fit: cover;
+  z-index: 2;
+}
+
+.cracha-nome {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  z-index: 3;
+}
+
+.cracha-matricula {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  z-index: 3;
+}
