@@ -5,29 +5,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gerador de Crachá</title>
+  <link rel="icon" type="image/png" href="imagens/icon.png">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<!-- Título -->
-<div class="container-fluid">
-  <h1 class="text-primary text-center p-2 rounded shadow">Gerador de Crachá</h1>
-</div>
 <div class="container my-4">
   <div class="row">
-    <!-- Coluna do Formulário -->
-    <div class="col-6">
-      <input type="file" class="form-control w-75 mb-3" accept="image/*" id="input-foto"><br>
-      <input type="text" class="form-control w-75 mb-3" placeholder="Nome" id="input-nome"><br>
-      <input type="text" class="form-control w-25 mb-3" placeholder="Matrícula" id="input-matricula"><br>
+    <div class="col-6 my-5">
+      <input type="radio" class="form-check-input" id="radio01" name="brmarinas" checked>
+      <label for="radio01" class="form-check-label">BR Marinas</label>
+      <input type="radio" class="form-check-input" id="radio02" name="brmarinas">
+      <label for="radio02" class="form-check-label">BR Marinas JL</label>
+      <div class="form-group mt-4">
+        <input type="file" class="form-control w-75" accept="image/*" id="input-foto"><br>
+        <input type="text" class="form-control w-75" placeholder="Nome" id="input-nome"><br>
+        <input type="text" class="form-control w-25" placeholder="Matrícula" id="input-matricula"><br>
+      </div>
       <button class="btn btn-primary" id="baixar">Baixar Crachá (PNG)</button>
-      <button class="btn btn-primary" id="print">Imprimir</button>
-      </form>
+      <!--<button class="btn btn-primary" id="print">Imprimir</button>-->    
     </div>
-    <!-- Coluna do Crachá -->
     <div class="col-6 d-flex justify-content-center align-items-center">
       <span class="borda">
         <div class="cracha">
-          <img class="cracha-layout" src="layout.jpeg" alt="">
+          <img class="cracha-layout" src="imagens/layout_geral.png" id="brm" alt="">
+          <img class="cracha-layout" src="imagens/layout_jl.png" id="brmjl" alt="">
           <img id="cracha-foto" class="cracha-foto" src="" alt=" ">
           <div id="cracha-nome" class="cracha-nome"></div>
           <div id="cracha-matricula" class="cracha-matricula"></div>

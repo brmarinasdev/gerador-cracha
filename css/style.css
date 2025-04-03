@@ -1,8 +1,24 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('../imagens/wave.svg');
+  background-size: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
 .borda {
-  background-color: rgb(42, 42, 116);
-  border: 2px solid rgb(42, 42, 116);
-  border-radius: 10px;
-  padding: 3px;
+  background-color: #d3d3d3;
+  border: 2px solid #d3d3d3;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.form-check-label {
+  margin-right: 15px;
 }
 
 .cracha {
@@ -21,6 +37,7 @@
 }
 
 .cracha-foto {
+  display: none;
   position: absolute;
   top: 32%;
   left: 50%;
@@ -54,4 +71,13 @@
   text-align: center;
   color: #fff;
   z-index: 3;
+}
+
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
 }
